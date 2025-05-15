@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sands of Avalon - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: gold;
+            text-align: center;
+        }
+        video#bgVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .logo {
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        .download-btn {
+            padding: 15px 40px;
+            background-color: gold;
+            color: black;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .download-btn:hover {
+            background-color: #b8860b;
+        }
+        .engine-logos {
+            margin-top: 30px;
+        }
+        .engine-logos img {
+            max-width: 80px;
+            margin: 0 10px;
+        }
+        .socials {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .socials img {
+            width: 32px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="socials">
+        <a href="https://t.me/ghostmerc" target="_blank"><img src="assets/telegram.png" alt="Telegram"></a>
+        <a href="https://discord.gg/69zjXaM3CH" target="_blank"><img src="assets/discord.png" alt="Discord"></a>
+        <a href="https://x.com/PlayGhostMerc" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+    </div>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="content">
+        <img src="assets/Sands of Avalon.png" alt="Sands of Avalon Logo" class="logo">
+        <br>
+        <button class="download-btn">DOWNLOAD</button>
+        <div class="engine-logos">
+            <img src="assets/unreal-logo.png" alt="Unreal Engine Logo">
+            <img src="assets/steam-logo.png" alt="Steam Logo">
+        </div>
+    </div>
+</body>
+</html>
